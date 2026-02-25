@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infrastructure Réseau SMARTTECH - Sory Ibrahim Soumaré</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Sory Ibrahim Soumaré</h1>
+        <p>Développeur full-stack Junior | Étudiant en Informatique</p>
+        <div class="social-links">
+            <a href="https://github.com/Ryso667" target="_blank" rel="noopener noreferrer" class="hover-lift" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sory-ibrahim-soumaré-824bb32b7" target="_blank" rel="noopener noreferrer" class="hover-lift" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active"><i class="fas fa-user"></i> À propos</a></li>
+            <li><a href="experience.html"><i class="fas fa-graduation-cap"></i> Parcours</a></li>
+            <li><a href="projetPro.html" class="active"><i class="fas fa-user"></i> Projet Professionnel </a></li>
+            <li><a href="skills.html"><i class="fas fa-code"></i> Compétences</a></li>
+            <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Projets</a></li>
+            <li><a href="certifications.html"><i class="fas fa-certificate"></i> Certifications</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="project-detail">
+        <div class="project-detail-container">
+            <!-- En-tête du projet -->
+            <div class="project-header-detail">
+                <div class="project-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <div class="project-title-section">
+                    <span class="project-category">Infrastructure Réseaux & Systèmes</span>
+                    <h1>Plateforme de Services Réseaux SMARTTECH</h1>
+                    <p class="project-pitch">Infrastructure réseau complète et sécurisée pour PME, intégrant DNS centralisé, serveur de messagerie, accès distant multi-protocoles, partage de fichiers, intranet web et système de notifications automatiques par email.</p>
+                </div>
+            </div>
+
+            <!-- Informations générales -->
+            <div class="project-info-grid">
+                <div class="info-card">
+                    <h3><i class="fas fa-calendar-alt"></i> Période</h3>
+                    <p>Février 2026</p>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-user"></i> Type</h3>
+                    <p>Projet académique individuel</p>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-graduation-cap"></i> Contexte</h3>
+                    <p>Projet de fin de module Services Réseaux - L3 GLSI</p>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-clock"></i> Durée</h3>
+                    <p>3 semaines</p>
+                </div>
+            </div>
+
+            <!-- Contenu principal -->
+            <div class="project-content-grid">
+                <!-- Contexte & Objectifs -->
+                <div class="content-section">
+                    <h2><i class="fas fa-bullseye"></i> Contexte & Objectifs</h2>
+                    <div class="section-content">
+                        <p>Conception et déploiement d'une infrastructure réseau complète pour la PME fictive SMARTTECH, permettant aux employés de travailler à distance en toute sécurité, de partager des fichiers, de communiquer par email interne et d'accéder à un intranet de gestion.</p>
+                        <p><strong>Problème résolu :</strong> Centraliser tous les services essentiels d'une entreprise sur un unique serveur Linux sécurisé, réduisant ainsi les coûts d'infrastructure tout en garantissant l'accès distant et la supervision automatique.</p>
+                        <p><strong>Public cible :</strong> PME de 10-50 employés nécessitant une infrastructure réseau professionnelle sans budget pour des solutions propriétaires coûteuses.</p>
+                    </div>
+                </div>
+
+                <!-- Mon rôle & Responsabilités -->
+                <div class="content-section">
+                    <h2><i class="fas fa-user-tie"></i> Mon Rôle & Responsabilités</h2>
+                    <div class="section-content">
+                        <ul class="responsibilities-list">
+                            <li><i class="fas fa-check"></i> <strong>Architecture réseau :</strong> Conception du schéma réseau complet avec DNS centralisé et segmentation logique des services.</li>
+                            <li><i class="fas fa-check"></i> <strong>Déploiement serveur Linux :</strong> Installation et configuration d'Ubuntu Server 22.04 LTS sur machine virtuelle (UTM sur Mac M2 Pro) avec IP statique et mode pont.</li>
+                            <li><i class="fas fa-check"></i> <strong>Service DNS (BIND9) :</strong> Configuration des zones directes et inverses pour le domaine smarttech.sn avec 10+ enregistrements (mail, ssh, rdp, vnc, intranet, etc.).</li>
+                            <li><i class="fas fa-check"></i> <strong>Accès distant sécurisé :</strong> Mise en place de SSH avec authentification par clé, RDP (xRDP), VNC (x11vnc) et noVNC pour accès navigateur.</li>
+                            <li><i class="fas fa-check"></i> <strong>Serveur de messagerie :</strong> Déploiement complet d'iRedMail (Postfix, Dovecot, Roundcube) avec création de comptes email et tests d'envoi/réception.</li>
+                            <li><i class="fas fa-check"></i> <strong>Partage de fichiers :</strong> Configuration Samba avec 3 niveaux d'accès (admin, users, public) et SFTP pour transferts sécurisés.</li>
+                            <li><i class="fas fa-check"></i> <strong>Application web intranet :</strong> Développement d'une application CRUD en PHP avec Nginx, MariaDB pour la gestion des employés, accessible en HTTPS.</li>
+                            <li><i class="fas fa-check"></i> <strong>Automatisation et monitoring :</strong> Création de 6 scripts Bash de surveillance (connexions SSH, services DOWN, tentatives échouées, commandes sudo, actions CRUD, accès Samba) avec notifications email automatiques via services systemd.</li>
+                            <li><i class="fas fa-check"></i> <strong>Sécurisation :</strong> Configuration firewall nftables avec règles précises, désactivation accès root SSH, chiffrement SSL/TLS pour tous les services web.</li>
+                            <li><i class="fas fa-check"></i> <strong>Documentation :</strong> Rédaction d'un rapport technique complet de 40+ pages avec captures d'écran, schémas réseau et section détaillée sur les difficultés rencontrées.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Technologies utilisées -->
+                <div class="content-section">
+                    <h2><i class="fas fa-tools"></i> Technologies & Outils</h2>
+                    <div class="section-content">
+                        <div class="tech-categories">
+                            <div class="tech-category">
+                                <h4>Système d'exploitation</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Ubuntu Server 22.04</span>
+                                    <span class="tech-tag">Ubuntu Desktop</span>
+                                    <span class="tech-tag">Windows (client)</span>
+                                </div>
+                            </div>
+                            <div class="tech-category">
+                                <h4>Services réseau</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">BIND9 (DNS)</span>
+                                    <span class="tech-tag">OpenSSH</span>
+                                    <span class="tech-tag">xRDP</span>
+                                    <span class="tech-tag">x11vnc</span>
+                                    <span class="tech-tag">noVNC</span>
+                                    <span class="tech-tag">Samba</span>
+                                </div>
+                            </div>
+                            <div class="tech-category">
+                                <h4>Messagerie</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">iRedMail</span>
+                                    <span class="tech-tag">Postfix (SMTP)</span>
+                                    <span class="tech-tag">Dovecot (IMAP)</span>
+                                    <span class="tech-tag">Roundcube</span>
+                                </div>
+                            </div>
+                            <div class="tech-category">
+                                <h4>Web & Base de données</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Nginx</span>
+                                    <span class="tech-tag">PHP 8.1</span>
+                                    <span class="tech-tag">MariaDB</span>
+                                    <span class="tech-tag">SSL/TLS</span>
+                                </div>
+                            </div>
+                            <div class="tech-category">
+                                <h4>Automatisation & Sécurité</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Bash scripting</span>
+                                    <span class="tech-tag">systemd</span>
+                                    <span class="tech-tag">cron</span>
+                                    <span class="tech-tag">nftables</span>
+                                </div>
+                            </div>
+                            <div class="tech-category">
+                                <h4>Virtualisation</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">UTM (Mac M2)</span>
+                                    <span class="tech-tag">Xvfb</span>
+                                    <span class="tech-tag">Mode bridged</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fonctionnalités clés -->
+                <div class="content-section">
+                    <h2><i class="fas fa-star"></i> Services Déployés</h2>
+                    <div class="section-content">
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <i class="fas fa-network-wired"></i>
+                                <h4>DNS Centralisé</h4>
+                                <p>BIND9 avec 10+ enregistrements pour résolution de noms interne</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-terminal"></i>
+                                <h4>Accès SSH Sécurisé</h4>
+                                <p>Authentification par clé, accès root désactivé</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-desktop"></i>
+                                <h4>Bureau à Distance</h4>
+                                <p>RDP pour Windows, VNC natif et noVNC navigateur</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-folder-open"></i>
+                                <h4>Partage de Fichiers</h4>
+                                <p>Samba (3 partages par groupe) + SFTP chiffré</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-envelope"></i>
+                                <h4>Messagerie Email</h4>
+                                <p>iRedMail complet : SMTP, IMAP, webmail Roundcube</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-globe"></i>
+                                <h4>Intranet CRUD</h4>
+                                <p>Application web PHP pour gestion des employés</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-bell"></i>
+                                <h4>Notifications Automatiques</h4>
+                                <p>6 types d'alertes par email (SSH, services, sudo, CRUD, Samba)</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <h4>Sécurité Firewall</h4>
+                                <p>nftables avec règles personnalisées et persistantes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Architecture technique -->
+                <div class="content-section">
+                    <h2><i class="fas fa-sitemap"></i> Architecture Réseau</h2>
+                    <div class="section-content">
+                        <div class="architecture-diagram">
+                            <div class="arch-layer">
+                                <h4>Réseau 192.168.1.0/24</h4>
+                                <p>Mode pont (bridged) pour intégration au réseau local réel</p>
+                            </div>
+                            <div class="arch-layer">
+                                <h4>Serveur SMARTTECH (192.168.1.11)</h4>
+                                <p>Ubuntu Server 22.04 - mail.smarttech.sn</p>
+                                <p><strong>Services :</strong> DNS, SSH, RDP, VNC, Samba, SFTP, SMTP, IMAP, Nginx, PHP, MariaDB</p>
+                            </div>
+                            <div class="arch-layer">
+                                <h4>Clients</h4>
+                                <p><strong>Ubuntu Desktop (192.168.1.10) :</strong> SSH, VNC, noVNC, SFTP, Samba, Roundcube</p>
+                                <p><strong>Windows (192.168.1.22) :</strong> RDP, Samba, Roundcube</p>
+                            </div>
+                            <div class="arch-layer">
+                                <h4>Sécurité</h4>
+                                <p>Firewall nftables - SSL/TLS - SSH par clé - Monitoring temps réel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Résultats & Apprentissages -->
+                <div class="content-section">
+                    <h2><i class="fas fa-trophy"></i> Résultats & Apprentissages</h2>
+                    <div class="section-content">
+                        <div class="results-section">
+                            <h4>Résultats :</h4>
+                            <ul>
+                                <li>Infrastructure complète fonctionnelle avec 12 services réseau déployés</li>
+                                <li>100% des services accessibles par DNS (smarttech.sn)</li>
+                                <li>Système de notifications automatiques couvrant 6 types d'événements critiques</li>
+                                <li>Application web intranet CRUD opérationnelle en HTTPS</li>
+                                <li>Messagerie interne complète avec envoi/réception validés</li>
+                                <li>Rapport technique de 40+ pages avec documentation exhaustive</li>
+                                <li>Architecture portable fonctionnant sur ARM64 (Mac M2 Pro)</li>
+                            </ul>
+                        </div>
+                        <div class="learnings-section">
+                            <h4>Apprentissages clés :</h4>
+                            <ul>
+                                <li>Maîtrise approfondie de l'administration système Linux (Ubuntu Server)</li>
+                                <li>Configuration avancée de services réseau (DNS, SMTP, IMAP, VNC)</li>
+                                <li>Scripting Bash pour automatisation et monitoring système</li>
+                                <li>Gestion de firewall avec nftables (règles, ordre d'évaluation)</li>
+                                <li>Architecture client-serveur et protocoles réseau (TCP/IP, SSH, RDP, VNC, SMB)</li>
+                                <li>Diagnostic réseau avec outils Linux (ss, netstat, dig, tcpdump)</li>
+                                <li>Déploiement et configuration Nginx avec virtual hosts multiples</li>
+                                <li>Intégration PHP-FPM et MariaDB pour applications web</li>
+                                <li>Sécurisation des communications (SSL/TLS, authentification par clé)</li>
+                                <li>Documentation technique professionnelle avec schémas et captures</li>
+                            </ul>
+                        </div>
+                        <div class="challenges-section">
+                            <h4>Défis techniques surmontés :</h4>
+                            <ul>
+                                <li><strong>IP statique avec cloud-init :</strong> Configuration netplan pour éviter le changement d'IP à chaque redémarrage</li>
+                                <li><strong>SSH en IPv6 uniquement :</strong> Forcer l'écoute IPv4 avec AddressFamily inet dans sshd_config</li>
+                                <li><strong>Conflit UFW / nftables :</strong> Désactivation UFW et gestion exclusive via nftables avec ordre des règles correct</li>
+                                <li><strong>Coexistence Nginx :</strong> Configuration de virtual hosts pour iRedMail et intranet avec server_name spécifiques</li>
+                                <li><strong>PHP-FPM sur port TCP :</strong> Adaptation de la config Nginx pour fastcgi_pass 127.0.0.1:9999</li>
+                                <li><strong>VNC sans GUI :</strong> Utilisation de Xvfb pour créer un serveur X virtuel sur Ubuntu Server</li>
+                                <li><strong>Emails invisibles Roundcube :</strong> Compréhension du fonctionnement Maildir (new/ vs cur/)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compétences démontrées -->
+                <div class="content-section">
+                    <h2><i class="fas fa-graduation-cap"></i> Compétences Techniques Démontrées</h2>
+                    <div class="section-content">
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4><i class="fas fa-server"></i> Administration Système</h4>
+                                <ul>
+                                    <li>Installation et configuration Ubuntu Server</li>
+                                    <li>Gestion des utilisateurs et groupes Linux</li>
+                                    <li>Configuration réseau (IP statique, netplan)</li>
+                                    <li>Services systemd et gestion de démons</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4><i class="fas fa-network-wired"></i> Services Réseau</h4>
+                                <ul>
+                                    <li>DNS avec BIND9 (zones, enregistrements)</li>
+                                    <li>Protocoles : SSH, RDP, VNC, SMB, SFTP</li>
+                                    <li>Serveur mail (Postfix, Dovecot)</li>
+                                    <li>Serveur web Nginx avec SSL/TLS</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4><i class="fas fa-code"></i> Développement</h4>
+                                <ul>
+                                    <li>Scripting Bash avancé</li>
+                                    <li>PHP 8.1 avec PDO/MySQL</li>
+                                    <li>SQL (MariaDB)</li>
+                                    <li>Architecture CRUD web</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4><i class="fas fa-shield-alt"></i> Sécurité</h4>
+                                <ul>
+                                    <li>Firewall nftables</li>
+                                    <li>Authentification par clé SSH</li>
+                                    <li>Certificats SSL/TLS</li>
+                                    <li>Logs et monitoring système</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="project-navigation">
+                <a href="projects.html" class="nav-button">
+                    <i class="fas fa-arrow-left"></i>
+                    Retour aux projets
+                </a>
+                <a href="project-intermediation.html" class="nav-button">
+                    Projet suivant
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Sory Ibrahim Soumaré. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

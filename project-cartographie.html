@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface de cartographie interactive - Sory Ibrahim Soumaré</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Sory Ibrahim Soumaré</h1>
+        <p>Développeur full-stack Junior en informatique | Étudiant en Informatique</p>
+        <div class="social-links">
+            <a href="https://github.com/Ryso667" target="_blank" rel="noopener noreferrer" class="hover-lift" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sory-ibrahim-soumaré-824bb32b7" target="_blank" rel="noopener noreferrer" class="hover-lift" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active"><i class="fas fa-user"></i> À propos</a></li>
+            <li><a href="experience.html"><i class="fas fa-graduation-cap"></i> Parcours</a></li>
+            <li><a href="projetPro.html" class="active"><i class="fas fa-user"></i> Projet Professionnel </a></li>
+            <li><a href="skills.html"><i class="fas fa-code"></i> Compétences</a></li>
+            <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Projets</a></li>
+            <li><a href="certifications.html"><i class="fas fa-certificate"></i> Certifications</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="project-detail">
+        <div class="project-detail-container">
+            <!-- En-tête du projet -->
+            <div class="project-header-detail">
+                <div class="project-icon">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <div class="project-title-section">
+                    <span class="project-category">Stage - CIRAD</span>
+                    <h1>Interface de cartographie interactive</h1>
+                    <p class="project-pitch">Développement d'une interface web pour la géolocalisation des organisations partenaires de la DyTAES.</p>
+                </div>
+            </div>
+
+            <!-- Informations générales -->
+            <div class="project-info-grid">
+                <div class="info-card">
+                    <h3><i class="fas fa-calendar-alt"></i> Période</h3>
+                    <p>Stage de fin d'études</p>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-building"></i> Organisation</h3>
+                    <p>CIRAD (Centre de coopération internationale en recherche agronomique pour le développement)</p>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-users"></i> Équipe</h3>
+                    <p>Projet individuel avec encadrement</p>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-clock"></i> Durée</h3>
+                    <p>3 mois</p>
+                </div>
+            </div>
+
+            <!-- Contenu principal -->
+            <div class="project-content-grid">
+                <!-- Contexte & Objectifs -->
+                <div class="content-section">
+                    <h2><i class="fas fa-bullseye"></i> Contexte & Objectifs</h2>
+                    <div class="section-content">
+                        <p><strong>Contexte :</strong> Ce projet a été réalisé dans le cadre de mon stage de fin d’études au <strong>CIRAD</strong>, en partenariat avec la <strong>DyTAES</strong> (Dynamique pour une Transition Agroécologique au Sénégal). L’objectif global était de concevoir un outil numérique innovant permettant de <strong>centraliser, visualiser et analyser les données géospatiales</strong> liées aux organisations engagées dans la transition agroécologique.</p>
+
+                        <p><strong>Objectif principal :</strong> Concevoir et développer une interface de cartographie interactive facilitant la <strong>prise de décision basée sur les données</strong> pour les acteurs du réseau agroécologique.</p>
+
+                        <p><strong>Objectifs spécifiques :</strong></p>
+                        <ul>
+                        <li>Modéliser la base de données géospatiale et définir la structure des informations à représenter ;</li>
+                        <li>Développer une interface intuitive de géolocalisation des institutions et de leurs zones d’intervention ;</li>
+                        <li>Concevoir une interface administrateur sécurisée pour la mise à jour des données ;</li>
+                        <li>Implémenter des fonctionnalités de filtrage dynamique et de visualisation cartographique avancée ;</li>
+                        <li>Documenter le projet et assurer sa maintenabilité.</li>
+                        </ul>
+
+                        <p><strong>Résultat :</strong> Une <strong>application web performante</strong> offrant une vision claire et interactive des acteurs de la transition agroécologique, améliorant ainsi la coordination, le partage de données et l’aide à la décision.</p>
+
+
+                </div>
+
+                <!-- Mon rôle & Responsabilités -->
+                <div class="content-section">
+                    <h2><i class="fas fa-user-tie"></i> Mon Rôle & Responsabilités</h2>
+                    <div class="section-content">
+                        <ul class="responsibilities-list">
+                            <li><i class="fas fa-check"></i> <strong>Analyse fonctionnelle et technique</strong>des besoins exprimés par les partenaires du projet ;</li>
+                            <li><i class="fas fa-check"></i> <strong>Conception UML</strong>et élaboration de la base de données géospatiale sous MySQL ;</li>
+                            <li><i class="fas fa-check"></i> <strong>Développement full-stack</strong>: intégration du front-end et back-end avec une communication asynchrone (AJAX, JSON) ;</li>
+                            <li><i class="fas fa-check"></i> <strong>Implémentation de la carte interactive</strong>avec Leaflet.js et gestion des couches dynamiques ;</li>
+                            <li><i class="fas fa-check"></i> <strong>Optimisation du chargement des données</strong>pour de meilleures performances sur grands ensembles géographiques ;</li>
+                            <li><i class="fas fa-check"></i>  <strong>Rédaction d’une documentation techniqueet d’un manuel utilisateur </strong> </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Technologies utilisées -->
+                <div class="content-section">
+                    <h2><i class="fas fa-tools"></i> Technologies & Outils</h2>
+                    <div class="section-content">
+                        <div class="tech-categories">
+                            <div class="tech-category">
+                                <h4>Frontend</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">HTML5</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">Tailwind-css</span>
+                                    <span class="tech-tag">JavaScript </span>
+                                    <span class="tech-tag">Leaflet.js</span>
+                                </div>
+                            </div>
+                            <div class="tech-category">
+                                <h4>Backend</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">PHP</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    
+                                </div>
+                            </div>
+                            <div class="tech-category">
+                                <h4>Outils</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Git</span>
+                                    <span class="tech-tag">GitHub</span>
+                                    <span class="tech-tag">Figma</span>
+                                    <span class="tech-tag">VS Code</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fonctionnalités clés -->
+                <div class="content-section">
+                    <h2><i class="fas fa-star"></i> Fonctionnalités Clés</h2>
+                    <div class="section-content">
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <i class="fas fa-map"></i>
+                                <h4>Cartes interactives</h4>
+                                <p>Visualisation de données géographiques avec zoom, pan et sélection de zones</p>
+                            </div>
+                           
+                            <div class="feature-item">
+                                <i class="fas fa-search"></i>
+                                <h4>Recherche d'institutions</h4>
+                                <p>Recherche par mots clés, zones administratives ou critères personnalisés</p>
+                            </div>
+                           
+                            <div class="feature-item">
+                                <i class="fas fa-download"></i>
+                                <h4>Export de données</h4>
+                                <p>Export des visualisations et données sélectionnées en différents formats</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-sync-alt"></i>
+                                <h4>Mise à jour des données</h4>
+                                <p>Mise à jour des données des institutions et leurs localités d'intervention</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <h4>Interface responsive</h4>
+                                <p>Adaptation automatique à tous les types d'écrans et appareils</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Démonstration vidéo -->
+                <div class="content-section">
+                    <h2><i class="fas fa-video"></i> Démonstration Vidéo</h2>
+                    <div class="section-content">
+                        <div class="video-container">
+                            <h4>Vidéo démo partie 1</h4>
+                
+                            <!-- Intégration Google Drive -->
+                            <iframe 
+                                src="https://drive.google.com/file/d/1iJR4xzv056LlvrsGIESrtxQI0-Wdtr1o/preview"
+                                width="640" 
+                                height="360" 
+                                allow="autoplay"
+                                allowfullscreen>
+                            </iframe>
+                
+                            <div class="video-description">
+                                <p><strong>Présentation du projet DyTAES :</strong> 
+                                Cette vidéo démontre les fonctionnalités principales de l'interface de cartographie interactive développée pour la géolocalisation des organisations partenaires de la DyTAES.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-demo-item">
+                    <div class="video-demo-header">
+                        <i class="fas fa-cogs"></i>
+                        <h4>Vidéo démo partie 2</h4>
+                    </div>
+                
+                    <div class="video-container-small">
+                        <!-- Intégration Google Drive -->
+                        <iframe 
+                            src="https://drive.google.com/file/d/1pjbRAZCJiqJwyrCqlBDOJneCMQqetL1b/preview"
+                            width="640" 
+                            height="360" 
+                            allow="autoplay"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Liens -->
+                <div class="content-section">
+                    <h2><i class="fas fa-link"></i> Liens </h2>
+                    <div class="section-content">
+                        <div class="project-links-detail">
+                            <a href="https://github.com/Ryso667/Dytaes-Cartographie_interactive" target="_blank" rel="noopener noreferrer" class="link-button">
+                                <i class="fab fa-github"></i>
+                                Code source GitHub
+                            </a>
+                            <a href="#" class="link-button disabled">
+                                <i class="fas fa-external-link-alt"></i>
+                                Démo en ligne (bientôt disponible)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Résultats & Apprentissages -->
+                <div class="content-section">
+                    <h2><i class="fas fa-trophy"></i> Résultats & Apprentissages</h2>
+                    <div class="section-content">
+                        <div class="results-section">
+                            <h4>Résultats obtenus :</h4>
+                            <ul>
+                                <li>Base de données géospatiale complète et normalisée des membres de la DyTAES ;</li>
+                                <li>Application web responsive et fonctionnelle, testée sur plusieurs navigateurs ;</li>
+                                <li>Amélioration de la prise de décision et de la coordination entre acteurs ;</li>
+                                <li>Valorisation de la donnée au service du développement durable.</li
+                            </ul>
+                        </div>
+                        <div class="learnings-section">
+                            <h4>Apprentissages clés :</h4>
+                            <ul>
+                                <li>Renforcement de mes compétences en modélisation et gestion de bases de données ;</li>
+                                <li>Approfondissement de la programmation web interactive et de l’exploitation de données spatiales ;</li>
+                                <li>Expérience en travail interdisciplinaire avec chercheurs et experts en environnement ;</li>
+                                <li>Développement de l’autonomie et de la rigueur méthodologique nécessaires à un projet de recherche appliquée.</li>
+                            </ul>
+                        </div>
+                        <div class="challenges-section">
+                            <h4>Défis surmontés :</h4>
+                            <ul>
+                                <li><strong>Conception d’un modèle de données optimisé :</strong> Création d’une structure relationnelle adaptée aux données géospatiales ;</li>
+                                <li><strong>Communication front/back efficace :</strong> Implémentation d’une API PHP renvoyant des données au format JSON ;</li>
+                                <li><strong>Filtrage dynamique et affichage instantané :</strong> Gestion d’événements complexes avec JavaScript pour une expérience fluide ;</li>
+                                <li><strong>Travail en autonomie :</strong> Capacité à organiser le projet de bout en bout, de l’analyse à la mise en production.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="project-navigation">
+                <a href="projects.html" class="nav-button">
+                    <i class="fas fa-arrow-left"></i>
+                    Retour aux projets
+                </a>
+                <a href="project-smarttech.html" class="nav-button">
+                    Projet suivant
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sory Ibrahim Soumaré. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

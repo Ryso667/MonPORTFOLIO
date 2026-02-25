@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Sory Ibrahim Soumaré</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Sory Ibrahim Soumaré</h1>
+        <p>Développeur full-stack Junior en informatique | Étudiant en Informatique</p>
+        <div class="social-links">
+            <a href="https://github.com/Ryso667" target="_blank" rel="noopener noreferrer" class="hover-lift" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sory-ibrahim-soumaré-824bb32b7" target="_blank" rel="noopener noreferrer" class="hover-lift" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active"><i class="fas fa-user"></i> À propos</a></li>
+            <li><a href="experience.html"><i class="fas fa-graduation-cap"></i> Parcours</a></li>
+            <li><a href="projetPro.html" class="active"><i class="fas fa-user"></i> Projet Professionnel </a></li>
+            <li><a href="skills.html"><i class="fas fa-code"></i> Compétences</a></li>
+            <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Projets</a></li>
+            <li><a href="certifications.html"><i class="fas fa-certificate"></i> Certifications</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="projects">
+        <h2>Mes Projets</h2>
+        
+        <!-- Section Projets Phares -->
+        <div class="featured-projects">
+            <h3>Projets Phares</h3>
+            <div class="projects-grid">
+                <!-- Projet Principal - Cartographie -->
+                <div class="project-mini-card featured hover-lift" onclick="window.location.href='project-cartographie.html'">
+                    <div class="project-image">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Stage - CIRAD</span>
+                        <h4>Interface de cartographie interactive</h4>
+                        <p>Développement d'une interface web pour la visualisation et l'analyse de données géographiques agricoles.</p>
+                        <div class="project-tech-mini">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Leaflet</span>
+                            <span class="tech-tag">PHP</span>
+                        </div>
+                    </div>
+                </div>
+                <!--Projet Smarttech-->
+                <div class="project-mini-card hover-lift" onclick="window.location.href='project-smarttech.html'">
+                    <div class="project-image">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Projet Académique</span>
+                        <h4>Infrastructure Réseau SMARTTECH</h4>
+                        <p>Plateforme complète de services réseaux sécurisés pour PME avec DNS, messagerie, accès distant et notifications automatiques.</p>
+                        <div class="project-tech-mini">
+                            <span class="tech-tag">Ubuntu Server</span>
+                            <span class="tech-tag">Nginx</span>
+                            <span class="tech-tag">iRedMail</span>
+                            <span class="tech-tag">Bash</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet Intermédiation -->
+                <div class="project-mini-card hover-lift" onclick="window.location.href='project-intermediation.html'">
+                    <div class="project-image">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Projet Académique</span>
+                        <h4>Plateforme clients-freelances</h4>
+                        <p>Marketplace complète avec messagerie, géolocalisation et système d'évaluation.</p>
+                        <div class="project-tech-mini">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Service de Messagerie</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <!-- Projet Vente Bétail -->
+                <div class="project-mini-card hover-lift" onclick="window.location.href='project-betail.html'">
+                    <div class="project-image">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">E-commerce</span>
+                        <h4>Plateforme de vente de bétail</h4>
+                        <p>Solution e-commerce pour la gestion et la vente de bétail avec gestion de stock avancée.</p>
+                        <div class="project-tech-mini">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+               <!-- Gestion Notes -->
+    <div class="project-mini-card hover-lift" onclick="window.location.href='project-notes.html'">
+        <div class="project-image">
+            <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="project-info">
+            <span class="project-category">Application Desktop</span>
+            <h4>Gestion des bulletins scolaires</h4>
+            <p>Application Java en ligne de commande pour la gestion complète des notes et bulletins.</p>
+            <div class="project-tech-mini">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">POO</span>
+                <span class="tech-tag">MySQL</span>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sory Ibrahim Soumaré. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
