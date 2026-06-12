@@ -1,84 +1,118 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Projet Professionnel</title>
+  <title>Sory Ibrahim Soumaré — Projet Professionnel</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Sory Ibrahim Soumaré</h1>
-    <p>Développeur full-stack Junior en informatique | Étudiant en Informatique</p>
-    <div class="social-links">
-      <a href="https://github.com/Ryso667" target="_blank" rel="noopener noreferrer" class="hover-lift" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/sory-ibrahim-soumaré-824bb32b7" target="_blank" rel="noopener noreferrer" class="hover-lift" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </div>
-  </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html" class="active"><i class="fas fa-user"></i> À propos</a></li>
-      <li><a href="experience.html"><i class="fas fa-graduation-cap"></i> Parcours</a></li>
-      <li><a href="projetPro.html" class="active"><i class="fas fa-user"></i> Projet Professionnel </a></li>
-      <li><a href="skills.html"><i class="fas fa-code"></i> Compétences</a></li>
-      <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Projets</a></li>
-      <li><a href="certifications.html"><i class="fas fa-certificate"></i> Certifications</a></li>
-      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-    </ul>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">SIS</a>
+      <ul class="nav-links">
+        <li><a href="index.html"><i class="fas fa-user"></i> À propos</a></li>
+        <li><a href="projetPro.html"><i class="fas fa-briefcase"></i> Projet Professionnel</a></li>
+        <li><a href="skills.html"><i class="fas fa-code"></i> Compétences</a></li>
+        <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Projets</a></li>
+        <li><a href="experience.html"><i class="fas fa-graduation-cap"></i> Parcours</a></li>
+        <li><a href="certifications.html"><i class="fas fa-certificate"></i> Certifications</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-btn" id="theme-toggle" aria-label="Changer le thème">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="nav-progress"></div>
+    </div>
   </nav>
 
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="page-hero-badge">Mon ambition</span>
+      <h1 class="page-hero-title">Projet Professionnel</h1>
+      <p class="page-hero-subtitle">Transformer le digital au service du développement territorial</p>
+    </div>
+  </section>
+
   <section id="project-pro">
-    <h2>Projet Professionnel</h2>
-    <div class="about-content hover-lift">
-       
-      <div class="vision">
-        <h3>Vision</h3>
-        <p>Devenir expert en management de projets IT et transformation digitale, puis diriger <strong>2L-Expertise</strong>, cabinet familial de conseil en développement agricole et territorial, pour accompagner les organisations africaines dans leur modernisation numérique.</p>
-      </div>
-    
-      <div class="parcours">
-        <h3>Parcours visé</h3>
-        
-        <div class="etape">
-          <h4>Court terme  — Consultant / Chef de Projet IT</h4>
-          <p>Intégrer un cabinet de conseil (Big 4, ESN ...) ou une organisation internationale en tant que Consultant IT ou Chef de Projet IT junior. Acquérir une expertise opérationnelle en pilotage de projets de transformation digitale, analyse fonctionnelle et accompagnement au changement, idéalement sur des projets à impact (secteur de la finance,secteur public, développement international).</p>
+    <div class="container">
+      <div class="page-article">
+        <p class="reveal">
+          Mon projet professionnel s'inscrit dans une continuité familiale et dans une volonté de contribuer à la <strong>transformation numérique des organisations en Afrique de l'Ouest</strong>.
+        </p>
+
+        <p class="reveal">
+          <strong>2L-Expertise</strong> est un cabinet malien spécialisé dans le développement rural et territorial, la gestion des données géospatiales, la valorisation de la recherche et l'accompagnement des acteurs publics et privés. Ces activités reposent sur des processus, des données et des outils dont la structuration et la digitalisation représentent aujourd'hui des enjeux majeurs.
+        </p>
+
+        <p class="reveal">
+          Mon ambition est de développer, à terme, une <strong>filiale SI</strong> au sein de 2L-Expertise, dédiée au conseil en systèmes d'information et à la transformation numérique. Cette structure aurait vocation à accompagner les organisations publiques et privées dans la modernisation de leurs processus, l'amélioration de leur gouvernance numérique et la mise en œuvre de projets de transformation digitale, en proposant une expertise encore insuffisamment développée à l'échelle locale.
+        </p>
+
+        <p class="reveal">
+          Le <strong>Master Consulting et Management des Systèmes d'Information (CMSI)</strong> constitue une étape essentielle de cette trajectoire. Il me permettra de consolider mes compétences en analyse fonctionnelle, AMOA, gestion de projet, gouvernance des systèmes d'information et conduite du changement, tout en développant une vision plus stratégique des enjeux numériques des organisations.
+        </p>
+
+        <p class="reveal">
+          À court terme, je souhaite acquérir une expérience significative en alternance au sein d'une organisation engagée dans des projets de transformation numérique. À moyen terme, mon objectif est d'évoluer vers des fonctions de <strong>consultant SI</strong>, d'analyste fonctionnel ou de chef de projet SI. À long terme, je souhaite mettre cette expertise au service du développement des organisations en Afrique de l'Ouest, en contribuant à la modernisation de leurs systèmes d'information et à l'amélioration de leur performance.
+        </p>
+
+        <div class="page-article-cta reveal">
+          <a href="contact.html" class="btn-primary">
+            Discutons de votre projet <i class="fas fa-arrow-right"></i>
+          </a>
         </div>
-    
-        <div class="etape">
-          <h4>Moyen terme  — Consultant Senior / Manager SI</h4>
-          <p>Évoluer vers un poste de Consultant Senior ou Manager en Management des SI, avec la responsabilité de piloter des projets complexes, d'encadrer des équipes et de conseiller des directions générales sur leurs stratégies de transformation digitale. Développer une expertise sectorielle forte sur les enjeux de digitalisation des organisations opérant dans les pays en développement.</p>
-        </div>
-    
-        <div class="etape">
-          <h4>Long terme  — Direction de 2L-Expertise</h4>
-          <p>Prendre la direction de <strong>2L-Expertise</strong>, cabinet familial basé au Mali spécialisé dans le développement agricole et territorial en Afrique de l'Ouest. Y structurer une offre de consulting en transformation digitale et management de projets IT, en capitalisant sur l'expertise acquise à l'international.</p>
-        </div>
       </div>
-    
-      <div class="motivation">
-        <h3>Pourquoi ce projet ?</h3>
-        <p>Mon stage au CIRAD m'a révélé que la réussite d'un projet informatique dépasse le cadre technique : recueillir les besoins d'acteurs pluridisciplinaires, concevoir des solutions alignées sur leurs usages, coordonner avec des équipes internationales, et assurer l'appropriation des outils sont des dimensions essentielles. Cette expérience, couplée à mon rôle de Chef de Projet sur une plateforme de mise en relation clients-freelances, a confirmé mon intérêt pour le management de projets IT et le conseil en transformation digitale.</p>
-        
-        <p>Le développement agricole et territorial en Afrique nécessite des systèmes d'information performants pour piloter les politiques publiques, gérer les ressources et mesurer l'impact des projets. En tant que futur dirigeant de <strong>2L-Expertise</strong>, je souhaite positionner le cabinet comme un acteur de référence en conseil SI pour le développement, capable d'intervenir auprès des collectivités locales comme des partenaires internationaux (CIRAD, FAO, Banque Mondiale, AFD).</p>
-      </div>
-    
-      <div class="formation">
-        <h3>Formation visée</h3>
-        <p><strong>Master Consulting et Management des Systèmes d'Information</strong> — IAE Montpellier (2026-2028)</p>
-        <p>Ce master complète mes compétences techniques par une dimension managériale et stratégique indispensable. Il me permettra d'acquérir l'expertise en analyse fonctionnelle, conduite du changement et pilotage de projets complexes nécessaire pour évoluer du rôle de développeur à celui de consultant et chef de projet.</p>
-      </div>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Sory Ibrahim Soumaré. Tous droits réservés.</p>
+    <div class="footer-wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" fill="currentColor">
+        <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1350,50 1440,40 L1440,0 L0,0 Z"/>
+      </svg>
+    </div>
+    <div class="footer-content">
+      <div class="footer-text">
+        <h3>Sory Ibrahim <span>Soumaré</span></h3>
+        <p>Admis Master CMSI — <strong>IAE Montpellier</strong> | Disponible en alternance septembre 2026</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/Ryso667" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/sory-ibrahim-soumar%C3%A9-824bb32b7" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="contact.html" aria-label="Contact">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sory Ibrahim Soumaré. Tous droits réservés.</p>
+    </div>
   </footer>
+
+  <button id="back-to-top" aria-label="Retour en haut">
+    <svg viewBox="0 0 50 50">
+      <circle cx="25" cy="25" r="22" fill="none" stroke="currentColor" stroke-width="3" class="progress-ring"/>
+    </svg>
+    <i class="fas fa-arrow-up" style="position:relative;z-index:1;"></i>
+  </button>
 
   <script src="script.js"></script>
 </body>

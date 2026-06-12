@@ -1,140 +1,248 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets - Sory Ibrahim Soumaré</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sory Ibrahim Soumaré — Projets</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Sory Ibrahim Soumaré</h1>
-        <p>Développeur full-stack Junior en informatique | Étudiant en Informatique</p>
-        <div class="social-links">
-            <a href="https://github.com/Ryso667" target="_blank" rel="noopener noreferrer" class="hover-lift" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/sory-ibrahim-soumaré-824bb32b7" target="_blank" rel="noopener noreferrer" class="hover-lift" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
-        </div>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html" class="active"><i class="fas fa-user"></i> À propos</a></li>
-            <li><a href="experience.html"><i class="fas fa-graduation-cap"></i> Parcours</a></li>
-            <li><a href="projetPro.html" class="active"><i class="fas fa-user"></i> Projet Professionnel </a></li>
-            <li><a href="skills.html"><i class="fas fa-code"></i> Compétences</a></li>
-            <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Projets</a></li>
-            <li><a href="certifications.html"><i class="fas fa-certificate"></i> Certifications</a></li>
-            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-        </ul>
-    </nav>
 
-    <section id="projects">
-        <h2>Mes Projets</h2>
-        
-        <!-- Section Projets Phares -->
-        <div class="featured-projects">
-            <h3>Projets Phares</h3>
-            <div class="projects-grid">
-                <!-- Projet Principal - Cartographie -->
-                <div class="project-mini-card featured hover-lift" onclick="window.location.href='project-cartographie.html'">
-                    <div class="project-image">
-                        <i class="fas fa-map-marked-alt"></i>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">Stage - CIRAD</span>
-                        <h4>Interface de cartographie interactive</h4>
-                        <p>Développement d'une interface web pour la visualisation et l'analyse de données géographiques agricoles.</p>
-                        <div class="project-tech-mini">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Leaflet</span>
-                            <span class="tech-tag">PHP</span>
-                        </div>
-                    </div>
-                </div>
-                <!--Projet Smarttech-->
-                <div class="project-mini-card hover-lift" onclick="window.location.href='project-smarttech.html'">
-                    <div class="project-image">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">Projet Académique</span>
-                        <h4>Infrastructure Réseau SMARTTECH</h4>
-                        <p>Plateforme complète de services réseaux sécurisés pour PME avec DNS, messagerie, accès distant et notifications automatiques.</p>
-                        <div class="project-tech-mini">
-                            <span class="tech-tag">Ubuntu Server</span>
-                            <span class="tech-tag">Nginx</span>
-                            <span class="tech-tag">iRedMail</span>
-                            <span class="tech-tag">Bash</span>
-                        </div>
-                    </div>
-                </div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
 
-                <!-- Projet Intermédiation -->
-                <div class="project-mini-card hover-lift" onclick="window.location.href='project-intermediation.html'">
-                    <div class="project-image">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">Projet Académique</span>
-                        <h4>Plateforme clients-freelances</h4>
-                        <p>Marketplace complète avec messagerie, géolocalisation et système d'évaluation.</p>
-                        <div class="project-tech-mini">
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">Service de Messagerie</span>
-                        </div>
-                    </div>
-                </div>
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">SIS</a>
+      <ul class="nav-links">
+        <li><a href="index.html"><i class="fas fa-user"></i> À propos</a></li>
+        <li><a href="projetPro.html"><i class="fas fa-briefcase"></i> Projet Professionnel</a></li>
+        <li><a href="skills.html"><i class="fas fa-code"></i> Compétences</a></li>
+        <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Projets</a></li>
+        <li><a href="experience.html"><i class="fas fa-graduation-cap"></i> Parcours</a></li>
+        <li><a href="certifications.html"><i class="fas fa-certificate"></i> Certifications</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-btn" id="theme-toggle" aria-label="Changer le thème">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="nav-progress"></div>
+    </div>
+  </nav>
 
-                
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="page-hero-badge">Réalisations</span>
+      <h1 class="page-hero-title">Mes Projets</h1>
+      <p class="page-hero-subtitle">Des solutions concrètes, de la conception au déploiement</p>
+    </div>
+  </section>
 
-                <!-- Projet Vente Bétail -->
-                <div class="project-mini-card hover-lift" onclick="window.location.href='project-betail.html'">
-                    <div class="project-image">
-                        <i class="fas fa-store"></i>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">E-commerce</span>
-                        <h4>Plateforme de vente de bétail</h4>
-                        <p>Solution e-commerce pour la gestion et la vente de bétail avec gestion de stock avancée.</p>
-                        <div class="project-tech-mini">
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">HTML/CSS</span>
-                        </div>
-                    </div>
-                </div>
-               <!-- Gestion Notes -->
-    <div class="project-mini-card hover-lift" onclick="window.location.href='project-notes.html'">
-        <div class="project-image">
-            <i class="fas fa-graduation-cap"></i>
-        </div>
-        <div class="project-info">
-            <span class="project-category">Application Desktop</span>
-            <h4>Gestion des bulletins scolaires</h4>
-            <p>Application Java en ligne de commande pour la gestion complète des notes et bulletins.</p>
-            <div class="project-tech-mini">
+  <section id="projects">
+    <div class="container">
+      <div class="featured-projects">
+        <h3>Projets Phares</h3>
+        <div class="projects-grid">
+
+          <div class="project-mini-card featured" onclick="window.location.href='senguichet.html'">
+            <div class="project-card-content">
+              <div class="project-card-icon">
+                <i class="fas fa-ticket-alt"></i>
+              </div>
+              <span class="project-card-status status-stage">Stage</span>
+              <h4>SENGUICHET</h4>
+              <p class="project-card-pitch">Plateforme de billetterie numérique pour le marché sénégalais avec vente en ligne, paiement mobile et contrôle d'accès sécurisé par QR Code.</p>
+              <div class="project-card-tech">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">TiDB Cloud</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="senguichet.html" class="project-card-link">
+                  Voir le projet <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-mini-card featured" onclick="window.location.href='project-cartographie.html'">
+            <div class="project-card-content">
+              <div class="project-card-icon">
+                <i class="fas fa-map-marked-alt"></i>
+              </div>
+              <span class="project-card-status status-stage">Stage</span>
+              <h4>Interface de cartographie interactive</h4>
+              <p class="project-card-pitch">Visualisation géographique des organisations partenaires et de leurs projets à travers une interface cartographique interactive.</p>
+              <div class="project-card-tech">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Leaflet</span>
+                <span class="tech-tag">PHP</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="project-cartographie.html" class="project-card-link">
+                  Voir le projet <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-mini-card" onclick="window.location.href='prime-market.html'">
+            <div class="project-card-content">
+              <div class="project-card-icon">
+                <i class="fas fa-store-alt"></i>
+              </div>
+              <span class="project-card-status status-academique">Projet académique</span>
+              <h4>PRIME MARKET</h4>
+              <p class="project-card-pitch">Plateforme numérique de gestion de la chaîne d'approvisionnement et de distribution des produits du secteur primaire au Sénégal.</p>
+              <div class="project-card-tech">
+                <span class="tech-tag">Nuxt.js</span>
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="prime-market.html" class="project-card-link">
+                  Voir le projet <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-mini-card" onclick="window.location.href='project-intermediation.html'">
+            <div class="project-card-content">
+              <div class="project-card-icon">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <span class="project-card-status status-academique">Académique</span>
+              <h4>Plateforme clients-freelances</h4>
+              <p class="project-card-pitch">Marketplace complète avec messagerie et géolocalisation.</p>
+              <div class="project-card-tech">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="project-intermediation.html" class="project-card-link">
+                  Voir le projet <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-mini-card" onclick="window.location.href='project-betail.html'">
+            <div class="project-card-content">
+              <div class="project-card-icon">
+                <i class="fas fa-store"></i>
+              </div>
+              <span class="project-card-status status-academique">Académique</span>
+              <h4>Plateforme de vente de bétail</h4>
+              <p class="project-card-pitch">Solution e-commerce avec gestion de stock et annonces.</p>
+              <div class="project-card-tech">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Tailwind</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="project-betail.html" class="project-card-link">
+                  Voir le projet <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-mini-card" onclick="window.location.href='project-smarttech.html'">
+            <div class="project-card-content">
+              <div class="project-card-icon">
+                <i class="fas fa-server"></i>
+              </div>
+              <span class="project-card-status status-academique">Académique</span>
+              <h4>Plateforme de Services Réseaux SMARTTECH</h4>
+              <p class="project-card-pitch">Infrastructure réseau complète avec DNS, messagerie et intranet.</p>
+              <div class="project-card-tech">
+                <span class="tech-tag">Linux</span>
+                <span class="tech-tag">BIND9</span>
+                <span class="tech-tag">iRedMail</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="project-smarttech.html" class="project-card-link">
+                  Voir le projet <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-mini-card" onclick="window.location.href='project-notes.html'">
+            <div class="project-card-content">
+              <div class="project-card-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <span class="project-card-status status-academique">Académique</span>
+              <h4>Gestion des bulletins scolaires</h4>
+              <p class="project-card-pitch">Application Java pour la gestion des notes et bulletins.</p>
+              <div class="project-card-tech">
                 <span class="tech-tag">Java</span>
                 <span class="tech-tag">POO</span>
                 <span class="tech-tag">MySQL</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="project-notes.html" class="project-card-link">
+                  Voir le projet <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
             </div>
+          </div>
+
         </div>
+      </div>
     </div>
-            </div>
-        </div>
+  </section>
 
-    </section>
+  <footer>
+    <div class="footer-wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" fill="currentColor">
+        <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1350,50 1440,40 L1440,0 L0,0 Z"/>
+      </svg>
+    </div>
+    <div class="footer-content">
+      <div class="footer-text">
+        <h3>Sory Ibrahim <span>Soumaré</span></h3>
+        <p>Admis Master CMSI — <strong>IAE Montpellier</strong> | Disponible en alternance septembre 2026</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/Ryso667" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/sory-ibrahim-soumar%C3%A9-824bb32b7" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="contact.html" aria-label="Contact">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sory Ibrahim Soumaré. Tous droits réservés.</p>
+    </div>
+  </footer>
 
-    <footer>
-        <p>&copy; 2025 Sory Ibrahim Soumaré. Tous droits réservés.</p>
-    </footer>
+  <button id="back-to-top" aria-label="Retour en haut">
+    <svg viewBox="0 0 50 50">
+      <circle cx="25" cy="25" r="22" fill="none" stroke="currentColor" stroke-width="3" class="progress-ring"/>
+    </svg>
+    <i class="fas fa-arrow-up" style="position:relative;z-index:1;"></i>
+  </button>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
-</html> 
+</html>

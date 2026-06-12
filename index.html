@@ -1,53 +1,192 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Sory Ibrahim Soumaré</title>
+  <title>Sory Ibrahim Soumaré — Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Sory Ibrahim Soumaré</h1>
-    <p>Développeur full-stack Junior en informatique | Étudiant en Informatique</p>
-    <div class="social-links">
-      <a href="https://github.com/Ryso667" target="_blank" rel="noopener noreferrer" class="hover-lift" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/sory-ibrahim-soumaré-824bb32b7" target="_blank" rel="noopener noreferrer" class="hover-lift" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </div>
-  </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html" class="active"><i class="fas fa-user"></i> À propos</a></li>
-      <li><a href="experience.html"><i class="fas fa-graduation-cap"></i> Parcours</a></li>
-      <li><a href="projetPro.html" class="active"><i class="fas fa-user"></i> Projet Professionnel </a></li>
-      <li><a href="skills.html"><i class="fas fa-code"></i> Compétences</a></li>
-      <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Projets</a></li>
-      <li><a href="certifications.html"><i class="fas fa-certificate"></i> Certifications</a></li>
-      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-    </ul>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">SIS</a>
+      <ul class="nav-links">
+        <li><a href="index.html"><i class="fas fa-user"></i> À propos</a></li>
+        <li><a href="projetPro.html"><i class="fas fa-user"></i> Projet Professionnel</a></li>
+        <li><a href="skills.html"><i class="fas fa-code"></i> Compétences</a></li>
+        <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Projets</a></li>
+        <li><a href="experience.html"><i class="fas fa-graduation-cap"></i> Parcours</a></li>
+        <li><a href="certifications.html"><i class="fas fa-certificate"></i> Certifications</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-btn" id="theme-toggle" aria-label="Changer le thème">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="nav-progress"></div>
+    </div>
   </nav>
 
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-photo">
+        <div class="photo-frame">
+          <img src="images/profil.jpeg" alt="Sory Ibrahim Soumaré" class="photo-img">
+          <div class="photo-ring"></div>
+          <div class="photo-ring-2"></div>
+        </div>
+      </div>
+      <div class="hero-text">
+        <span class="hero-badge">Étudiant — Génie Logiciel</span>
+        <h1 class="hero-title">
+          Sory Ibrahim<br>
+          <span class="gradient-text">Soumaré</span>
+        </h1>
+        <p class="hero-subtitle">
+          <span id="typed-text"></span><span class="typed-cursor">|</span>
+        </p>
+        <div class="hero-badges">
+          <span class="badge"><i class="fas fa-graduation-cap"></i> ESP Dakar</span>
+          <span class="badge"><i class="fas fa-bullseye"></i> Admis Master CMSI</span>
+          <span class="badge"><i class="fas fa-briefcase"></i> Stagiaire Sen Digital Pulse</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#about" class="btn-primary">
+            En savoir plus <i class="fas fa-arrow-down"></i>
+          </a>
+          <div class="social-links-hero">
+            <a href="https://github.com/Ryso667" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sory-ibrahim-soumar%C3%A9-824bb32b7" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Défiler</span>
+      <div class="mouse"><div class="wheel"></div></div>
+    </div>
+  </section>
+
   <section id="about">
-    <h2>Présentation personnelle</h2>
-    <div class="about-content hover-lift">
-      <p>Je m'appelle Sory Ibrahim Soumaré, étudiant en Licence Génie Logiciel et Systèmes d’Information à l’École Supérieure Polytechnique de Dakar, après l’obtention d’un DUT en Informatique. Originaire du Mali et poursuivant mes études au Sénégal, j’évolue dans un environnement académique exigeant qui m’a permis de développer autonomie, rigueur et capacité d’adaptation.</p>
-
-<p>Passionné par les technologies numériques et les systèmes d’information, je m’intéresse particulièrement à la manière dont les outils informatiques peuvent structurer, organiser et valoriser l’information pour répondre à des problématiques concrètes.</p>
-
-<p>Curieux, analytique et discipliné, je cherche constamment à approfondir mes connaissances et à progresser dans un cadre stimulant, avec une approche méthodique et orientée vers l’excellence.</p>
+    <div class="container">
+      <span class="section-label reveal">À propos</span>
+      <h2 class="section-title reveal">Qui suis-je ?</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="reveal">
+            Je m'appelle <strong>Sory Ibrahim Soumaré</strong>, étudiant en Génie Logiciel et Systèmes d'Information à l'<strong>École Supérieure Polytechnique de Dakar</strong> et admis en <strong>Master 1 Consulting et Management des Systèmes d'Information (CMSI)</strong> à l'<strong>IAE de Montpellier</strong> pour la rentrée de septembre 2026.
+          </p>
+          <p class="reveal">
+            Au cours de mon parcours, j'ai développé des compétences en conception de systèmes d'information, analyse des besoins, gestion de projet et développement logiciel à travers plusieurs projets académiques et professionnels. J'ai notamment contribué au développement d'une interface de cartographie interactive destinée au <strong>CIRAD</strong>, permettant de visualiser la localisation géographique de ses partenaires et leur répartition sur différents territoires.
+          </p>
+          <p class="reveal">
+            Je suis actuellement en stage au sein de <strong>Sen Digital Pulse</strong>, où je participe au co-développement de <strong>SENGUICHET</strong>, une plateforme de billetterie événementielle mobile-first destinée au marché sénégalais. Dans ce projet mené au sein d'une équipe de développement, j'interviens à la fois sur les aspects techniques et sur la coordination du projet, en contribuant à l'organisation des tâches, au suivi de l'avancement et à la traduction des besoins en fonctionnalités concrètes.
+          </p>
+          <p class="reveal">
+            Ce qui m'intéresse particulièrement est la capacité des systèmes d'information à répondre à des besoins métiers réels. Comprendre un processus, analyser les attentes des utilisateurs, structurer une solution et accompagner sa mise en œuvre sont des dimensions qui me motivent autant que le développement lui-même. Cette double approche, à la fois technique et fonctionnelle, m'oriente naturellement vers les métiers du conseil en systèmes d'information, de l'analyse fonctionnelle et du Chef de Projet IT.
+          </p>
+          <p class="reveal">
+            Originaire du Mali et ayant poursuivi mes études au Sénégal avant de rejoindre prochainement la France, j'ai développé une forte capacité d'adaptation, d'autonomie et de travail en équipe dans des environnements multiculturels et exigeants.
+          </p>
+          <p class="reveal">
+            Je suis actuellement à la recherche d'une alternance à partir de septembre 2026 dans les domaines des systèmes d'information, de la transformation numérique et du Chef de Projet <strong>IT</strong>.
+          </p>
+          <div class="about-cta reveal">
+            <a href="contact.html" class="btn-primary">
+              Me contacter <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="about-sidebar">
+          <div class="stats-grid">
+            <div class="stat-card reveal" data-target="7">
+              <div class="stat-icon"><i class="fas fa-laptop-code"></i></div>
+              <span class="stat-number">0</span>
+              <span class="stat-label">Projets réalisés</span>
+            </div>
+            <div class="stat-card reveal" data-target="3">
+              <div class="stat-icon"><i class="fas fa-certificate"></i></div>
+              <span class="stat-number">0</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-card reveal" data-target="3">
+              <div class="stat-icon"><i class="fas fa-globe"></i></div>
+              <span class="stat-number">0</span>
+              <span class="stat-label">Langues</span>
+            </div>
+            <div class="stat-card reveal" data-target="3">
+              <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+              <span class="stat-number">0</span>
+              <span class="stat-label">3e année post-bac</span>
+            </div>
+          </div>
+          <div class="info-card-sidebar reveal">
+            <h3><i class="fas fa-info-circle"></i> Informations</h3>
+            <div class="info-item"><i class="fas fa-map-marker-alt"></i> Dakar, Sénégal</div>
+            <div class="info-item"><i class="fas fa-graduation-cap"></i> ESP Dakar — Génie Logiciel</div>
+            <div class="info-item"><i class="fas fa-bullseye"></i> Admis Master CMSI — IAE Montpellier</div>
+            <div class="info-item"><i class="fas fa-envelope"></i> soryibrahimsoumare@email.com</div>
+            <a href="contact.html" class="sidebar-cta">
+              Travaillons ensemble <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Sory Ibrahim Soumaré. Tous droits réservés.</p>
+    <div class="footer-wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" fill="currentColor">
+        <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1350,50 1440,40 L1440,0 L0,0 Z"/>
+      </svg>
+    </div>
+    <div class="footer-content">
+      <div class="footer-text">
+        <h3>Sory Ibrahim <span>Soumaré</span></h3>
+        <p>Admis Master CMSI — <strong>IAE Montpellier</strong> | Disponible en alternance septembre 2026</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/Ryso667" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/sory-ibrahim-soumar%C3%A9-824bb32b7" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="contact.html" aria-label="Contact">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sory Ibrahim Soumaré. Tous droits réservés.</p>
+    </div>
   </footer>
+
+  <button id="back-to-top" aria-label="Retour en haut">
+    <svg viewBox="0 0 50 50">
+      <circle cx="25" cy="25" r="22" fill="none" stroke="currentColor" stroke-width="3" class="progress-ring"/>
+    </svg>
+    <i class="fas fa-arrow-up" style="position:relative;z-index:1;"></i>
+  </button>
 
   <script src="script.js"></script>
 </body>

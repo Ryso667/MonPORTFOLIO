@@ -1,166 +1,209 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compétences - Sory Ibrahim Soumaré</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sory Ibrahim Soumaré — Compétences</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Sory Ibrahim Soumaré</h1>
-        <p>Développeur full-stack Junior en informatique | Étudiant en Informatique</p>
-        <div class="social-links">
-            <a href="https://github.com/Ryso667" target="_blank" rel="noopener noreferrer" class="hover-lift" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/sory-ibrahim-soumaré-824bb32b7" target="_blank" rel="noopener noreferrer" class="hover-lift" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
-        </div>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html" class="active"><i class="fas fa-user"></i> À propos</a></li>
-            <li><a href="experience.html"><i class="fas fa-graduation-cap"></i> Parcours</a></li>
-            <li><a href="projetPro.html" class="active"><i class="fas fa-user"></i> Projet Professionnel </a></li>
-            <li><a href="skills.html"><i class="fas fa-code"></i> Compétences</a></li>
-            <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Projets</a></li>
-            <li><a href="certifications.html"><i class="fas fa-certificate"></i> Certifications</a></li>
-            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-        </ul>
-    </nav>
 
-    <section id="skills">
-        <h2>Mes Compétences</h2>
-        
-        <div class="skills-container">
-            <!-- Hard Skills -->
-            <div class="skills-category">
-                <h3><i class="fas fa-laptop-code"></i> Hard Skills</h3>
-                
-                <div class="skills-grid">
-                    <!-- Développement -->
-                    <div class="skill-card hover-lift">
-                        <div class="skill-header">
-                            <i class="fas fa-code"></i>
-                            <h4>Compétences Techniques</h4>
-                        </div>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Programmation orientée objet en Java : encapsulation, héritage, modularisation, conception de logiciels</li>
-                            <li><i class="fas fa-check"></i> Développement web Front-End : HTML, CSS, JavaScript, Tailwind CSS, Leaflet.js</li>
-                            <li><i class="fas fa-check"></i> Développement Back-End : PHP (CRUD, sessions) et Java (servlets, gestion de données, JDBC)</li>
-                            <li><i class="fas fa-check"></i> Bases en Python et initiation au scripting</li>
-                            <li><i class="fas fa-check"></i> Modélisation UML et méthode Merise pour l’analyse et la conception de systèmes d’information</li>
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
 
-                        </ul>
-                    </div>
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">SIS</a>
+      <ul class="nav-links">
+        <li><a href="index.html"><i class="fas fa-user"></i> À propos</a></li>
+        <li><a href="projetPro.html"><i class="fas fa-briefcase"></i> Projet Professionnel</a></li>
+        <li><a href="skills.html"><i class="fas fa-code"></i> Compétences</a></li>
+        <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Projets</a></li>
+        <li><a href="experience.html"><i class="fas fa-graduation-cap"></i> Parcours</a></li>
+        <li><a href="certifications.html"><i class="fas fa-certificate"></i> Certifications</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-btn" id="theme-toggle" aria-label="Changer le thème">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="nav-progress"></div>
+    </div>
+  </nav>
 
-                    <!-- Base de Données & Systèmes -->
-                    <div class="skill-card hover-lift">
-                        <div class="skill-header">
-                            <i class="fas fa-database"></i>
-                            <h4>Bases de données</h4>
-                        </div>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Conception et modélisation de bases relationnelles (Merise, UML, diagrammes entité-association)</li>
-                            <li><i class="fas fa-check"></i> Gestion et manipulation de données avec MySQL sous Linux</li>
-                            <li><i class="fas fa-check"></i> Création et administration de schémas, tables et relations entre entités</li>
-                            <li><i class="fas fa-check"></i> Écriture, optimisation et maintenance de requêtes SQL complexes</li>
-                            <li><i class="fas fa-check"></i> Intégration des bases dans des applications via JDBC ou PHP (connexion, CRUD, transactions)</li>
-                            
-                        </ul>
-                    </div>
-                    <div class="skill-card hover-lift">
-                        <div class="skill-header">
-                            <i class="fas fa-network-wired"></i>
-                            <h4>Administration Réseau & Systèmes</h4>
-                        </div>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Conception et déploiement d’infrastructures réseau sécurisées (Linux/Windows, accès distant SSH/RDP/VNC)</li>
-                            <li><i class="fas fa-check"></i> Partage et transfert de fichiers via Samba, FTP, SFTP, FTPS avec gestion des permissions</li>
-                            <li><i class="fas fa-check"></i> Administration de serveurs web et applications PHP avec base de données et HTTPS</li>
-                            <li><i class="fas fa-check"></i> Services de messagerie (SMTP, IMAP, POP) et notifications automatiques des actions critiques</li>
-                            <li><i class="fas fa-check"></i> Configuration DNS, pare-feu, journalisation et automatisation via scripts Bash/Python</li>
-                        </ul>
-                    </div>
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="page-hero-badge">Savoir-faire & Savoir-être</span>
+      <h1 class="page-hero-title">Compétences</h1>
+      <p class="page-hero-subtitle">Un équilibre entre expertise technique et qualités humaines</p>
+    </div>
+  </section>
 
-                    <div class="skill-card hover-lift">
-                        <div class="skill-header">
-                            <i class="fas fa-brain"></i>
-                            <h4>IA & Productivité</h4>
-                        </div>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Utilisation stratégique d’IA génératives (ChatGPT, Cursor AI) pour la recherche et la documentation technique</li>
-                            <li><i class="fas fa-check"></i> Optimisation des requêtes et génération de solutions adaptées aux contextes métiers</li>
-                            <li><i class="fas fa-check"></i> Automatisation partielle des tâches répétitives et amélioration de la productivité en développement</li>
-                            <li><i class="fas fa-check"></i> Approche éthique et responsable de l’intégration de l’IA dans les processus numériques</li>
-                    
-                        </ul>
-                    </div>
-
-                    <!-- Analyse & Mathématiques -->
-                    <div class="skill-card hover-lift">
-                        <div class="skill-header">
-                            <i class="fas fa-calculator"></i>
-                            <h4>Analyse & Mathématiques</h4>
-                        </div>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Bases solides en analyse et algèbre appliquées à l’informatique</li>
-                            <li><i class="fas fa-check"></i> Mathématiques discrètes et logique pour la modélisation et la programmation</li>
-                            <li><i class="fas fa-check"></i> Notions en statistiques et probabilités </li>
-                            <li><i class="fas fa-check"></i> Initiation à la recherche opérationnelle et à l’optimisation</li>
-                            
-                        
-                        </ul>
-                    </div>
-
-            <!-- Soft Skills -->
-            <div class="skills-category">
-                <h3><i class="fas fa-brain"></i> Soft Skills</h3>
-                
-                <div class="skills-grid">
-                    <!-- Gestion & Projet -->
-                    <div class="skill-card hover-lift">
-                        <div class="skill-header">
-                            <i class="fas fa-tasks"></i>
-                            <h4>Gestion & Projet</h4>
-                        </div>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Expérience en pilotage de projets informatiques académiques (analyse, conception, coordination)</li>
-                            <li><i class="fas fa-check"></i> Compétences en gestion, planification et suivi des objectifs</li>
-                            <li><i class="fas fa-check"></i> Capacité à relier besoins métiers et solutions techniques</li>
-                            <li><i class="fas fa-check"></i> Rédaction de cahiers des charges et documentation technique</li>
-                            <li><i class="fas fa-check"></i> Pratique de la veille technologique et adaptation rapide aux innovations</li>
-                        </ul>
-                    </div>
-                </div>
+  <section id="skills">
+    <div class="container">
+      <div class="skills-category">
+        <h3><i class="fas fa-sitemap"></i> Compétences Métiers SI</h3>
+        <div class="skills-grid">
+          <div class="skill-card hover-lift" data-category="si">
+            <div class="skill-header">
+              <i class="fas fa-search"></i>
+              <h4>Analyse Fonctionnelle &amp; SI</h4>
             </div>
+            <ul>
+              <li><i class="fas fa-check"></i> Analyse des besoins utilisateurs et expression des exigences fonctionnelles</li>
+              <li><i class="fas fa-check"></i> Rédaction de spécifications fonctionnelles et de cahiers des charges</li>
+              <li><i class="fas fa-check"></i> Modélisation UML (cas d'utilisation, classes, séquence, activités)</li>
+              <li><i class="fas fa-check"></i> Modélisation des processus métiers (BPMN, Merise)</li>
+              <li><i class="fas fa-check"></i> Conception et urbanisation de systèmes d'information</li>
+              <li><i class="fas fa-check"></i> Interface entre équipes métiers et techniques — AMOA</li>
+            </ul>
+          </div>
 
-                    <!-- Compétences Transversales -->
-                    <div class="skill-card hover-lift">
-                        <div class="skill-header">
-                            <i class="fas fa-users"></i>
-                            <h4>Compétences Transversales</h4>
-                        </div>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Esprit d’analyse et approche méthodique dans la résolution de problèmes</li>
-                            <li><i class="fas fa-check"></i> Collaboration efficace dans des projets collectifs et interdisciplinaires</li>
-                            <li><i class="fas fa-check"></i> Autonomie, rigueur et sens des responsabilités dans le travail</li>
-                            <li><i class="fas fa-check"></i> Leadership naturel et capacité à motiver une équipe</li>
-                            <li><i class="fas fa-check"></i> Adaptabilité face aux nouveaux outils et environnements technologiques</li>
-                            <li><i class="fas fa-check"></i> Communication claire, professionnelle et orientée solution</li>
-                        </ul>
-                    </div>
-    </section>
+          <div class="skill-card hover-lift" data-category="project">
+            <div class="skill-header">
+              <i class="fas fa-tasks"></i>
+              <h4>Gestion de Projet &amp; Méthodes</h4>
+            </div>
+            <ul>
+              <li><i class="fas fa-check"></i> Pilotage de projets SI : planification, coordination, suivi des livrables</li>
+              <li><i class="fas fa-check"></i> Méthodes Agile (Scrum, Scrumban) et gestion de backlog</li>
+              <li><i class="fas fa-check"></i> Gestion de versions et collaboration avec Git et GitHub</li>
+              <li><i class="fas fa-check"></i> Communication avec les parties prenantes et reporting</li>
+              <li><i class="fas fa-check"></i> Rédaction de documentation fonctionnelle et technique</li>
+            </ul>
+          </div>
 
-    <footer>
-        <p>&copy; 2025 Sory Ibrahim Soumaré. Tous droits réservés.</p>
-    </footer>
+          <div class="skill-card hover-lift" data-category="data">
+            <div class="skill-header">
+              <i class="fas fa-database"></i>
+              <h4>Bases de Données &amp; Analyse</h4>
+            </div>
+            <ul>
+              <li><i class="fas fa-check"></i> Conception et modélisation de bases relationnelles (Merise, UML)</li>
+              <li><i class="fas fa-check"></i> Écriture et optimisation de requêtes SQL complexes</li>
+              <li><i class="fas fa-check"></i> Administration MySQL : schémas, tables, relations, intégrité</li>
+              <li><i class="fas fa-check"></i> Intégration de bases dans les applications (JDBC, PHP)</li>
+            </ul>
+          </div>
 
-    <script src="script.js"></script>
+          <div class="skill-card hover-lift" data-category="dev">
+            <div class="skill-header">
+              <i class="fas fa-code"></i>
+              <h4>Développement logiciel &amp; conception d'applications</h4>
+            </div>
+            <ul>
+              <li><i class="fas fa-check"></i> Java (POO, JDBC, servlets), PHP, JavaScript (React, Next.js)</li>
+              <li><i class="fas fa-check"></i> React Native, Flutter, Node.js</li>
+              <li><i class="fas fa-check"></i> Conception d'applications full-stack et APIs REST</li>
+              <li><i class="fas fa-check"></i> Architecture applicative et bonnes pratiques du génie logiciel</li>
+              <li><i class="fas fa-check"></i> Bases en C, Python, HTML/CSS</li>
+            </ul>
+          </div>
+
+          <div class="skill-card hover-lift" data-category="network">
+            <div class="skill-header">
+              <i class="fas fa-network-wired"></i>
+              <h4>Réseaux &amp; Systèmes</h4>
+            </div>
+            <ul>
+              <li><i class="fas fa-check"></i> Conception et sécurisation d'infrastructures réseau</li>
+              <li><i class="fas fa-check"></i> Administration de serveurs Linux et services associés</li>
+              <li><i class="fas fa-check"></i> Gestion des accès, pare-feu et certificats SSL/TLS</li>
+            </ul>
+          </div>
+
+          <div class="skill-card hover-lift" data-category="tools">
+            <div class="skill-header">
+              <i class="fas fa-laptop"></i>
+              <h4>Outils Numériques &amp; Productivité</h4>
+            </div>
+            <ul>
+              <li><i class="fas fa-check"></i> Utilisation d'outils de gestion de projet (Trello)</li>
+              <li><i class="fas fa-check"></i> Automatisation et optimisation des processus via le numérique</li>
+              <li><i class="fas fa-check"></i> Exploitation d'IA génératives pour la productivité et la documentation</li>
+              <li><i class="fas fa-check"></i> Veille technologique et adaptation aux nouveaux outils</li>
+            </ul>
+          </div>
+
+          <div class="skill-card hover-lift" data-category="ai-dev">
+            <div class="skill-header">
+              <i class="fas fa-robot"></i>
+              <h4>Outils &amp; développement assisté par l'IA</h4>
+            </div>
+            <ul>
+              <li><i class="fas fa-check"></i> Cursor AI, OpenCode, GitHub Copilot, Cloud Code</li>
+              <li><i class="fas fa-check"></i> Prompt engineering appliqué au développement logiciel</li>
+              <li><i class="fas fa-check"></i> Debugging et optimisation assistés par IA</li>
+              <li><i class="fas fa-check"></i> Accélération du cycle conception-développement via outils IA</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3><i class="fas fa-brain"></i> Soft Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-card hover-lift" data-category="cross">
+            <div class="skill-header">
+              <i class="fas fa-users"></i>
+              <h4>Compétences Transversales</h4>
+            </div>
+            <ul>
+              <li><i class="fas fa-check"></i> Communication claire entre équipes métiers et techniques</li>
+              <li><i class="fas fa-check"></i> Esprit d'analyse et approche méthodique de la résolution de problèmes</li>
+              <li><i class="fas fa-check"></i> Autonomie, rigueur et sens des responsabilités</li>
+              <li><i class="fas fa-check"></i> Leadership et coordination d'équipes pluridisciplinaires</li>
+              <li><i class="fas fa-check"></i> Adaptabilité aux nouveaux environnements et technologies</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" fill="currentColor">
+        <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1350,50 1440,40 L1440,0 L0,0 Z"/>
+      </svg>
+    </div>
+    <div class="footer-content">
+      <div class="footer-text">
+        <h3>Sory Ibrahim <span>Soumaré</span></h3>
+        <p>Admis Master CMSI — <strong>IAE Montpellier</strong> | Disponible en alternance septembre 2026</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/Ryso667" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/sory-ibrahim-soumar%C3%A9-824bb32b7" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="contact.html" aria-label="Contact">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sory Ibrahim Soumaré. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Retour en haut">
+    <svg viewBox="0 0 50 50">
+      <circle cx="25" cy="25" r="22" fill="none" stroke="currentColor" stroke-width="3" class="progress-ring"/>
+    </svg>
+    <i class="fas fa-arrow-up" style="position:relative;z-index:1;"></i>
+  </button>
+
+  <script src="script.js"></script>
 </body>
-</html> 
+</html>
