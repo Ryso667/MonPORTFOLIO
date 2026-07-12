@@ -2321,6 +2321,46 @@ footer {
     padding: 2rem;
 }
 
+.all-projects .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    padding: 0 0 2rem;
+}
+
+.all-projects .project-mini-card {
+    padding: 0.4rem;
+    opacity: 0.75;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.all-projects .project-mini-card:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+
+.all-projects .project-card-content {
+    padding: 1.25rem 1rem 1rem;
+}
+
+.all-projects .project-card-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+}
+
+.all-projects .project-mini-card h4 {
+    font-size: 1rem;
+}
+
+.all-projects .project-card-pitch {
+    font-size: 0.82rem;
+}
+
+.all-projects .project-card-tech .tech-tag {
+    font-size: 0.68rem;
+    padding: 0.15rem 0.6rem;
+}
+
 .project-mini-card {
     background: var(--card-bg);
     border-radius: 15px;
