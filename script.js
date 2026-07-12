@@ -130,10 +130,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const typedEl = document.getElementById('typed-text');
   if (typedEl) {
     const words = [
-      'Développeur Full-Stack',
-      'Futur Consultant SI',
-      'Chef de Projet IT en devenir',
-      'Étudiant en Génie Logiciel'
+      'Chef de projet SI & Business Analyst',
+      'Admis Master CMSI — IAE Montpellier'
     ];
     let wordIndex = 0, charIndex = 0, isDeleting = false;
 
