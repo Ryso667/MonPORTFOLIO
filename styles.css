@@ -487,6 +487,31 @@ h2::after {
 .skill-card[data-category="ai-dev"]::before { background: linear-gradient(90deg, #e91e63, #f06292); }
 .skill-card[data-category="cross"]::before { background: linear-gradient(90deg, #4834d4, #686de0); }
 
+.section-badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.25rem 0.85rem;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #06b6d4, #22d3ee);
+  color: white;
+  margin-left: 0.75rem;
+  vertical-align: middle;
+  line-height: 1.4;
+}
+
+.skills-category.featured h3::after {
+  width: 120px;
+  background: linear-gradient(90deg, #06b6d4, #22d3ee, transparent);
+}
+
+.skill-card[data-category="pm"]::before { background: linear-gradient(90deg, #06b6d4, #22d3ee); }
+.skill-card[data-category="pm"]:hover { box-shadow: 0 16px 48px rgba(6,182,212,0.12); }
+.skill-card[data-category="web"]::before { background: linear-gradient(90deg, #4361ee, #6c85f7); }
+.skill-card[data-category="web"]:hover { box-shadow: 0 16px 48px rgba(67,97,238,0.12); }
+
 .skill-card[data-category="si"]:hover { box-shadow: 0 16px 48px rgba(72,52,212,0.12); }
 .skill-card[data-category="project"]:hover { box-shadow: 0 16px 48px rgba(6,182,212,0.12); }
 .skill-card[data-category="data"]:hover { box-shadow: 0 16px 48px rgba(16,185,129,0.12); }
